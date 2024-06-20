@@ -1,0 +1,25 @@
+{
+  "name": "next-blueprint",
+  "author": "Esteban Arce",
+  "description": "Blueprint for Next.js project with boilerplate",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "next-blueprint": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc && echo '#!/usr/bin/env node' | cat - dist/index.js > temp && mv temp dist/index.js && chmod +x dist/index.js"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^9.2.23"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^20.14.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.2"
+  }
+}
